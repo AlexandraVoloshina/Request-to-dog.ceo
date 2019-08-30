@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><h3>Название пород собак</h3></div>
+    Поиск породы: <!-- <input id="inputName" onchange="searchByNameDogs()" type="text" size="40"> -->
+    <form action="" method="get">
+       <input list="dogs" name="dogs" id="inputDogs">
+      <datalist id="dogs">
+      </datalist>
+      <button id="btn">Search</button>
+<!--        <input type="submit" id="btn"> -->
+</form>
+    <div id="nameDog"></div>
+    
+    <div class="main">
+        <div class="item">
+        <!-- <ul></ul> -->
+        <div id="list"></div>
+        </div>
+<!--         <div id="images"></div> -->
+    
+    <ul id="imagesSlider">
+        <li class="slide showing"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+        <li class="slide"><img src=""></li>
+    </ul>
+
+    </div>
+    <script src="script.js"></script>
+</body></html>
