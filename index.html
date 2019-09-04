@@ -6,35 +6,40 @@
 </head>
 <body>
     <div><h3>Название пород собак</h3></div>
-    Поиск породы: <!-- <input id="inputName" onchange="searchByNameDogs()" type="text" size="40"> -->
+    Поиск породы: 
     <form action="" method="get">
        <input list="dogs" name="dogs" id="inputDogs">
       <datalist id="dogs">
       </datalist>
       <button id="btn">Search</button>
-<!--        <input type="submit" id="btn"> -->
 </form>
     <div id="nameDog"></div>
     
     <div class="main">
         <div class="item">
-        <!-- <ul></ul> -->
         <div id="list"></div>
         </div>
-<!--         <div id="images"></div> -->
-    
-    <ul id="imagesSlider">
-        <li class="slide showing"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-        <li class="slide"><img src=""></li>
-    </ul>
+
+
+    <div id="carousel" class="carousel">
+    <button class="arrow prev">⇦</button>
+    <div class="gallery">
+      <ul id="imagesSlider">
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+        <li><img src="https://img.joomcdn.net/851527e3a36a490f8c43c440820dbe98f9816de1_400_400.jpeg"></li>
+      </ul>
+    </div>
+    <button class="arrow next">⇨</button>
+  </div>
+
 
     </div>
     <script src="script.js"></script>

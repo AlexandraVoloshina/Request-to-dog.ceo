@@ -1,18 +1,10 @@
+
 .item
 {
     overflow: scroll;
-    width: 500px;
+    width: 300px;
     height: 500px;
     display: inline-block;
-}
-
-#images
-{
-    display: inline-block;
-}
-
-#images img{
-    height: 500px;
 }
 
 #nameDog
@@ -22,66 +14,72 @@
 }
 
 li {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none;
    }
 
-
-#imagesSlider{
-    position: relative;
-    height: 500px;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-    display: inline-block;
+.carousel {
+  position: fixed;
+  left: 310px;
+  top: 100px;
+  width: 900px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+  display: inline-block;
 }
 
-.slide{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 50%;
-    opacity: 0;
-    z-index: 1;
-
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+.carousel img {
+  width: 300px;
+  height: 300px;
+  display: block;
 }
 
-.showing{
-    opacity: 1;
-    z-index: 2;
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
 }
 
-
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-/*.slide{
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #333;
-    color: #fff;
-}*/
-
-/*.slide:nth-of-type(1){
-    background: red;
+.arrow:focus {
+  outline: none;
 }
-.slide:nth-of-type(2){
-    background: orange;
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
 }
-.slide:nth-of-type(3){
-    background: green;
+
+.prev {
+  left: 7px;
 }
-.slide:nth-of-type(4){
-    background: blue;
+
+.next {
+  right: 7px;
 }
-.slide:nth-of-type(5){
-    background: purple;
-}*/
+
+.gallery {
+  width: 900px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 303px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
